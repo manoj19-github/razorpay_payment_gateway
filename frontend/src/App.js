@@ -1,6 +1,7 @@
 import {useEffect} from 'react'
 import './App.css';
 import CourseCard from './components/CourseCard';
+import IdleTimerComponent from './components/IdleTimerComponent';
 function App() {
   // const loadScript = (src)=>{
   //   return new Promise((resolve)=>{
@@ -21,10 +22,12 @@ function App() {
   //   loadScript('https://checkout.razorpay.com/v1/checkout.js')
   // })
   return (
-   <section className='card-list'>
-    <CourseCard/>
-
-   </section>
+    <IdleTimerComponent>
+    <section className='card-list'>
+      <CourseCard/>
+      
+    </section>
+   </IdleTimerComponent>
   );
 }
 
